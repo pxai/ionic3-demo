@@ -21,6 +21,23 @@
 
   <ion-card>
     <ion-card-header>
+      Nuevo curso
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label floating>Talk title</ion-label>
+        <ion-input type="text" #title></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Talk description</ion-label>
+        <ion-input type="text" #description></ion-input>
+      </ion-item>
+      <button (click)="goLesson(1)">Go lesson</button>>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
       Componentes
     </ion-card-header>
     <ion-card-content>

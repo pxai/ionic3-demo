@@ -11,9 +11,14 @@ export class CourseProvider {
 
   getAllCourses () {
     return this.http
-      .get('localhost:3000/courses.json')
+      .get('http://localhost:3000/courses.json')
       .map(response => response.json())
     //.get('data.agenda.wedeploy.io/talks')
+  }
+
+  createCourse(title, description) {
+    return this.http
+      .post('http://localhost:3000/courses.json', {title, description});
   }
 
 }

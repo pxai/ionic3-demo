@@ -1,11 +1,15 @@
-import {Component, NgModule} from '@angular/core';
+import {Component} from '@angular/core';
 import {CourseProvider} from "../../providers/course/course";
-import { AsyncPipe } from '@angular/common';
+
 
 /**
  templateUrl: 'course.html'
+ <ion-list inset>
+ <!--p *ngFor="let course of courses">
+ {{course.id}} {{course.name}}
+ </p-->
+ </ion-list>
  */
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'course',

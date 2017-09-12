@@ -13,6 +13,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { CourseProvider } from '../providers/course/course';
+import {Lesson1Page} from "../pages/lesson1/lesson1";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CourseProvider } from '../providers/course/course';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    Lesson1Page
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { CourseProvider } from '../providers/course/course';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    Lesson1Page
   ],
   providers: [
     StatusBar,
